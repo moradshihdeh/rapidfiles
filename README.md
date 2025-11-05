@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧩 Batch DSL — Mass File & Folder Creator for VS Code
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/your-publisher.batch-dsl)](https://marketplace.visualstudio.com/items?itemName=your-publisher.batch-dsl)
@@ -249,3 +250,7 @@ MIT © 2025 Your Name
 [GitHub Repository](https://github.com/yourname/batch-dsl)
 
 ---
+=======
+# rapidfiles
+vscode extension, batch create files
+>>>>>>> 6f92e99bff8ccbfa4f565eadce9dbbf3b29e8792
