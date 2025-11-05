@@ -1,0 +1,85 @@
+{
+  "name": "rapidfiles",
+  "displayName": "RapidFiles",
+  "description": "create multiple files instead of one by one",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:batch.create",
+    "onCommand:batch.savescript",
+    "onCommand:batch.template"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "batch.create",
+        "title": "Batch: Create Files",
+        "category": "Batch"
+      },
+      {
+        "command": "batch.savescript",
+        "title": "Batch: Save Script",
+        "category": "Batch"
+      },
+      {
+        "command": "batch.template",
+        "title": "Batch: Run Template",
+        "category": "Batch"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "batch.create",
+          "when": "resourceScheme == 'file'",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Batch File Creator",
+      "properties": {
+        "batchFileCreator.templates": {
+          "type": "object",
+          "default": {},
+          "description": "Optional predefined templates for creating common project structures."
+        },
+        "batchFileCreator.variables": {
+          "type": "object",
+          "default": {},
+          "description": "Custom variables usable with ${var} substitution inside batch scripts."
+        },
+        "batchFileCreator.confirmationMode": {
+          "type": "string",
+          "enum": [
+            "off",
+            "console",
+            "preview"
+          ],
+          "default": "off",
+          "description": "How to confirm before running a batch script. 'off' runs instantly, 'console' prints planned actions, 'preview' shows a preview panel for confirmation."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.105.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.36.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
