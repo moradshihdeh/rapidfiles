@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# 🧩 Batch DSL — Mass File & Folder Creator for VS Code
+# 🧩 Rapidfiles — Mass File & Folder Creator for VS Code
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/your-publisher.batch-dsl)](https://marketplace.visualstudio.com/items?itemName=your-publisher.batch-dsl)
 [![Installs](https://img.shields.io/visual-studio-marketplace/i/your-publisher.batch-dsl)](https://marketplace.visualstudio.com/items?itemName=your-publisher.batch-dsl)
@@ -118,17 +118,7 @@ readme.md
 
 Change preview mode under VS Code Settings:
 
-```json
-"batchDsl.previewMode": "off" | "console" | "confirm"
-```
 
-| Mode | Description |
-|------|--------------|
-| `"off"` | Runs immediately. |
-| `"console"` | Logs planned operations in the Output panel. |
-| `"confirm"` | Prompts a confirmation dialog. |
-
----
 
 ## 💾 Template System
 
@@ -169,7 +159,6 @@ Templates are stored persistently in VS Code’s `globalState`.
 
 4. Each operation uses the VS Code `workspace.fs` API for filesystem creation.
 
-5. Behavior (confirm, console, off) is set via configuration.
 
 ---
 
@@ -221,7 +210,7 @@ You can expand this in `createEntity()` inside `extension.js`.
 ## 🧩 Development
 
 ```bash
-git clone https://github.com/yourname/batch-dsl.git
+git clone https://github.com/moradshihdeh/rapidfiles.git
 cd batch-dsl
 npm install
 ```
