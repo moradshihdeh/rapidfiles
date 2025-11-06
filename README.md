@@ -28,7 +28,7 @@ Define folders, files, and templates using a minimal, expressive syntax — stra
 2. Press `Ctrl + P` and type:
 
    ```bash
-   ext install your-publisher.batch-dsl
+   ext install codequest-decoded.rapidfiles
    ```
 
 3. Or clone this repo and build manually:
@@ -236,7 +236,7 @@ Run debug mode:
 ## 📄 License
 
 MIT © 2025 Your Name  
-[GitHub Repository](https://github.com/yourname/batch-dsl)
+[GitHub Repository](https://github.com/moradshihdeh/rapidfiles)
 
 ---
 =======

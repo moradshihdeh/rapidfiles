@@ -3,6 +3,7 @@
   "displayName": "RapidFiles",
   "description": "create multiple files instead of one by one",
   "version": "0.0.1",
+  "publisher": "codequest.decoded",
   "engines": {
     "vscode": "^1.105.0"
   },
